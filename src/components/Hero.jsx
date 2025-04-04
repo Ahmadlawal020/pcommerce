@@ -40,7 +40,7 @@
 const Hero = () => {
   return (
     <section
-      className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen w-full bg-cover bg-center"
+      className="relative h-[60vh] sm:h-[70vh] md:h-[80vh]  w-full bg-cover bg-center "
       style={{
         backgroundImage:
           "url(https://images.pexels.com/photos/3855962/pexels-photo-3855962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=3)",
@@ -60,7 +60,7 @@ const Hero = () => {
             Experience the convenience of getting fuel delivered to your
             doorstep — it's that easy.
           </p>
-          <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 mt-3 sm:mt-4">
+          <div className="flex flex-row gap-3 sm:gap-4 mt-3 sm:mt-4">
             <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded shadow transition text-sm sm:text-base">
               Order Fuel Now
             </button>

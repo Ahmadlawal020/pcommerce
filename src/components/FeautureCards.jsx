@@ -25,9 +25,9 @@ const cards = [
 const FeatureCards = () => {
   return (
     <section className="bg-green-600 py-12 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-center">
         {cards.map((card, idx) => (
-          <div key={idx} className="p-6">
+          <div key={idx} className="p-2">
             <div className="mb-4">{card.icon}</div>
             <h3 className="text-lg font-semibold text-white mb-2">
               {card.title}

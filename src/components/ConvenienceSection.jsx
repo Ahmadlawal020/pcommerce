@@ -46,14 +46,19 @@ const ConvenienceSection = () => {
         </p>
 
         {/* Feature Cards - No background, icons centered on top */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 mb-10 text-center max-lg:space-y-6">
           {features.map((feature, index) => (
-            <div key={index}>
-              {feature.icon}
-              <h4 className="text-base sm:text-lg font-medium text-gray-800 mb-1">
-                {feature.title}
-              </h4>
-              <p className="text-sm text-gray-500">{feature.description}</p>
+            <div
+              key={index}
+              className=" max-lg:flex  max-lg:items-start max-lg:gap-4 max-lg:text-start "
+            >
+              <div className="md:flex-shrink-0">{feature.icon}</div>
+              <div>
+                <h4 className="text-base sm:text-lg font-medium text-gray-800 mb-1">
+                  {feature.title}
+                </h4>
+                <p className="text-sm text-gray-500">{feature.description}</p>
+              </div>
             </div>
           ))}
         </div>
