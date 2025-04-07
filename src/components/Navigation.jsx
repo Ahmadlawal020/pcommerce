@@ -11,7 +11,7 @@ const NavigationBar = () => {
         isHomePage ? "max-md:absolute max-md:bg-transparent" : "bg-white"
       } z-50`}
     >
-      <div className="w-screen max-w-screen-2xl overflow-hidden flex items-center justify-between h-20 ml-auto mr-auto max-sm:px-2 max-md:px-4 max-lg:px-8 max-xl:px-16 px-23 max-sm:h-14">
+      <div className="w-screen max-w-screen-2xl overflow-hidden flex items-center justify-between h-20 min-h-18 ml-auto mr-auto max-sm:px-2 max-md:px-4 max-lg:px-8 max-xl:px-16 px-23 max-sm:h-14">
         <div className="mx-1 mr-8">
           {isHomePage ? (
             <>

@@ -1,7 +1,8 @@
 const CustomerInformationStep = ({ formData, handleChange }) => {
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 max-w-[60vw] min-w-[30vw] gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
         {[
           {
             label: "Full Name",
@@ -52,7 +53,7 @@ const ProductSelectionStep = ({
 }) => {
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1  max-w-[60vw] min-w-[50vw]  gap-6">
         {productList.map((product) => {
           const selected = formData.products[product.id]?.selected;
           const quantity = formData.products[product.id]?.quantity || 0;
@@ -484,7 +485,7 @@ const Order = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-[70vh] flex justify-center items-center border-t border-gray-300 ">
       <Toaster
         position="top-center"
         toastOptions={{
@@ -546,7 +547,8 @@ const Order = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+        {/* <div className="bg-white rounded-xl shadow-md overflow-hidden"> */}
+        <div className=" overflow-hidden">
           <div className="p-8 space-y-8">
             {/* Step Components */}
             {step === 1 && (
