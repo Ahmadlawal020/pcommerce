@@ -1,14 +1,9 @@
+// store.js
 import { configureStore } from "@reduxjs/toolkit";
-import { apiSlice } from "./apiSlice";
-import { setupListeners } from "@reduxjs/toolkit/query";
+import orderReducer from "../feautures/order/orderSlice";
 
 export const store = configureStore({
   reducer: {
-    [apiSlice.reducerPath]: apiSlice.reducer, // RTK Query API slice
+    order: orderReducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(apiSlice.middleware), // Add RTK Query middleware
-  devTools: true, // Enable Redux DevTools
 });
-
-setupListeners(store.dispatch);

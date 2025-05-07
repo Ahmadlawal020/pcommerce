@@ -5,3 +5,5 @@ export { default as ProductSection } from "./ProductSection";
 export { default as HowItWorks } from "./HowItWorks";
 export { default as FeatureCards } from "./FeautureCards";
 export { default as ConvenienceSection } from "./ConvenienceSection";
+export { default as Cart } from "./Cart";
+export { default as ProductCard } from "./ProductCard";
